@@ -1,24 +1,7 @@
-@import url(../utils/_variables.scss);
-
-body {
-    margin: auto 0;
-    width: 100%;
-    max-width: 1440px;
-    font-family: 'Roboto', sans-serif;
-    .title{
-        font-family:'Shrikhand',sans-serif;
-    }
-    }
-
-    .footermenu {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        align-items: flex-start;
-        .footermenu__logo {
-            color: white;
-        }
-        .footermenu__link {
-            list-style: none;
-        }
-      }
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../components/card-resto";
+@import "../components/fonctionnement-btn";
+@import "../components/footer";
+@import "../components/header";
+@import "../components/main-button";
