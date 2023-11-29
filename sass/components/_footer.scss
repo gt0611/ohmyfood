@@ -1,0 +1,5 @@
+.footermenu {
+   background-color: $dark-color;
+   @include flex(column);
+   
+}
