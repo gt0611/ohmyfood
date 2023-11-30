@@ -2,3 +2,12 @@
     display: flex;
     flex-direction: $direction;
 }
+
+@mixin title($white-color){
+    font-family: 'Shrikhand';
+    font-size: 1.75rem;
+}
+
+@mixin font {
+    font-family:'Roboto',sans-serif;
+    }

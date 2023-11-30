@@ -5,3 +5,9 @@
 @import "../components/footer";
 @import "../components/header";
 @import "../components/main-button";
+
+body {
+    @include font;
+    margin: 0 auto;
+    
+}

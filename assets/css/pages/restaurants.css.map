@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../sass/components/_footer.scss","../../../sass/utils/_variables.scss","../../../sass/utils/_mixins.scss"],"names":[],"mappings":"AAAA;EACG,kBCIS;ECJR;EACA","file":"restaurants.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/components/_footer.scss","../../../sass/utils/_variables.scss","../../../sass/utils/_mixins.scss"],"names":[],"mappings":"AAAA;EACG,kBCIS;EDHT,OCIW;EDHX;EEFC;EACA,gBFEa;;AACd;EACG;EACA;;AAEH;EACG;EACA;;AACA;EACG;EACA,OCRK","file":"restaurants.css"}
