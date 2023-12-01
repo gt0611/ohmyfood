@@ -9,5 +9,43 @@
 body {
     @include font;
     margin: 0 auto;
-    
+    padding: 0;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.heroheader {
+    @include flex (column);
+    align-items: center;
+    justify-content: center;
+    background-color: $background;
+    &__subtitle {
+        color: $dark-color;
+    }
+    &__btn {
+        width: 218px;
+    }
+}
+
+.fonctionnement {
+    @include flex (column);
+    align-items: start;
+    &__list {
+        position: relative;
+        &--img1 {
+            position: absolute;
+            top: 25px;
+            left: 100px;
+        }
+        &--img2 {
+            position: absolute;
+            top: 120px;
+            left: 100px;
+        }
+        &--img3 {
+            position: absolute;
+        top: 210px;
+        left: 100px;
+        }
+    }
 }
