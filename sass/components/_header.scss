@@ -1,0 +1,23 @@
+.headbloc {
+    @include flex(column);
+    align-items:center;
+    justify-content: center;
+    &__logo {
+        margin: 10px
+    }
+    &__searchbar {
+        @include flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        height: 50px;
+        background-color: $grey-color;
+    &--location {
+        border: none;
+        background-color: $grey-color;
+    }
+    }
+    
+}
+
