@@ -1,26 +1,56 @@
-.fonctionnement--btn {
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.restaurants__card--content {
+  padding: 15px;
+}
+.restaurants__card--img {
+  height: 231px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.fonctionnement__list--btn {
   border-radius: 20px;
-  width: 322.486px;
   height: 72.379px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  margin-bottom: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 28px 34px;
+  align-items: center;
 }
 
 .footermenu {
   background-color: #353535;
   color: #FFFFFF;
   padding: 20px 25px;
+  gap: 16px;
   display: flex;
   flex-direction: column;
 }
 .footermenu__title {
   font-family: "Shrikhand";
   font-size: 1.125rem;
+  margin: 0;
 }
 .footermenu__link {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.footermenu__link__li {
+  display: flex;
+  gap: 11px;
 }
 .footermenu__link--white {
   text-decoration: none;
@@ -67,45 +97,43 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1440px;
-  width: 100%;
 }
 
 .heroheader {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 30px 18px;
   background-color: #F6F6F6;
+  text-align: center;
+  justify-content: center;
 }
 .heroheader__subtitle {
   color: #353535;
 }
-.heroheader__btn {
-  width: 218px;
+
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  padding: 30px 18px;
 }
 .fonctionnement__list {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.fonctionnement__list--img1 {
-  position: absolute;
-  top: 25px;
-  left: 100px;
-}
-.fonctionnement__list--img2 {
-  position: absolute;
-  top: 120px;
-  left: 100px;
-}
-.fonctionnement__list--img3 {
-  position: absolute;
-  top: 210px;
-  left: 100px;
+
+.restaurants {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px 18px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=home.css.map */

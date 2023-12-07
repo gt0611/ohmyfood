@@ -1,1 +1,18 @@
 @import "./coeur";
+
+.restaurants {
+  &__card {
+    @include flex(column);
+    border-radius: 15px;
+    background-color: $white-color;
+    margin-bottom: 15px;
+    &--content {
+      padding: 15px;
+    }
+    &--img {
+      height: 231px;
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+    }
+  }
+}

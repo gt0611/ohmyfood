@@ -7,45 +7,40 @@
 @import "../components/main-button";
 
 body {
-    @include font;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1440px;
-    width: 100%;
+  @include font;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
 }
 
 .heroheader {
-    @include flex (column);
-    align-items: center;
-    justify-content: center;
-    background-color: $background;
-    &__subtitle {
-        color: $dark-color;
-    }
-    &__btn {
-        width: 218px;
-    }
+  @include flex(column);
+  padding: 30px 18px;
+  background-color: $background;
+  text-align: center;
+  justify-content: center;
+  &__subtitle {
+    color: $dark-color;
+  }
+}
+
+.main-container {
+  @include flex(column);
 }
 
 .fonctionnement {
-    @include flex (column);
-    align-items: start;
-    &__list {
-        position: relative;
-        &--img1 {
-            position: absolute;
-            top: 25px;
-            left: 100px;
-        }
-        &--img2 {
-            position: absolute;
-            top: 120px;
-            left: 100px;
-        }
-        &--img3 {
-            position: absolute;
-        top: 210px;
-        left: 100px;
-        }
-    }
+  @include flex(column);
+  padding: 30px 18px;
+  &__list {
+    @include flex(column);
+    gap: 25px;
+  }
+}
+
+.restaurants {
+  background-color: $background;
+  @include flex(column);
+  gap: 18px;
+  padding: 30px 18px;
+  box-sizing: border-box;
 }
