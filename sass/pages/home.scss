@@ -9,7 +9,6 @@
 body {
   @include font;
   margin: 0 auto;
-  padding: 0;
   max-width: 1440px;
 }
 
@@ -19,6 +18,7 @@ body {
   background-color: $background;
   text-align: center;
   justify-content: center;
+  align-items: center;
   &__subtitle {
     color: $dark-color;
   }

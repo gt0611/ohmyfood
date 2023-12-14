@@ -62,9 +62,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 0;
 }
 .headbloc__logo {
-  margin: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.headbloc__logo--goback {
+  position: absolute;
+  left: 5px;
 }
 .headbloc__searchbar {
   display: flex;
@@ -79,6 +90,9 @@
 .headbloc__searchbar--location {
   border: none;
   background-color: #eaeaea;
+}
+.headbloc__img {
+  width: 100%;
 }
 
 .btn {
@@ -95,7 +109,6 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  padding: 0;
   max-width: 1440px;
 }
 
@@ -106,6 +119,7 @@ body {
   background-color: #F6F6F6;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .heroheader__subtitle {
   color: #353535;
