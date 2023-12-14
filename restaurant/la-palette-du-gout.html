@@ -10,19 +10,164 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/pages/restaurants.css">
     <title>La palette du goût</title>
 </head>
 
 <body>
-    <header>
+    <header class="headbloc">
+        <div class="headbloc__logo">
+            <img class="headbloc__logo--goback" src="../assets/Images-et-textes-Ohmyfood/images/logo/GoBack.svg"
+                alt="image d'une flèche">
+            <img class="headbloc__logo--site" src="../assets/Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg"
+                alt="logo ohmyfood">
+        </div>
+        <img class="headbloc__img"
+            src="../assets/Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
     </header>
 
-    <main>
+    <main class="container">
+        <h1 class="main-title">La palette du goût</h1>
+
+        <section class="card">
+            <p class="card__title">Entrées</p>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Fricassée d'escargots</p>
+                    <p class="btn-plate--content--subtitle">Au piment d'Espelette </p>
+                </div>
+                <div class="btn-price">
+                    <span>25</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Foie gras de canard mi-cuit</p>
+                    <p class="btn-plate--content--subtitle">Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="btn-price">
+                    <span>35</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Œuf au plat</p>
+                    <p class="btn-plate--content--subtitle">Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <div class="btn-price">
+                    <span>25</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+        </section>
+
+        <section class="card">
+            <p class="card__title">Plats</p>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Filet de bœuf aux herbes</p>
+                    <p class="btn-plate--content--subtitle">Accompagné de sa ribambelle de légumes</p>
+                </div>
+                <div class="btn-price">
+                    <span>40</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Parmentier de queue de bœuf</p>
+                    <p class="btn-plate--content--subtitle">À la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="btn-price">
+                    <span>35</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Filet de turbot</p>
+                    <p class="btn-plate--content--subtitle">Aux agrumes</p>
+                </div>
+                <div class="btn-price">
+                    <span>44</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+        </section>
+
+        <section class="card">
+            <p class="card__title">Desserts</p>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Paris-Brest</p>
+                    <p class="btn-plate--content--subtitle">Revisité</p>
+                </div>
+                <div class="btn-price">
+                    <span>18</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Macaron au chocolat d'exception</p>
+                    <p class="btn-plate--content--subtitle">Et glace à la vanille de Madagascar</p>
+                </div>
+                <div class="btn-price">
+                    <span>22</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+            <button class="btn-plate">
+                <div class="btn-plate--content">
+                    <p class="btn-plate--content--title">Mousse au chocolat</p>
+                    <p class="btn-plate--content--subtitle">Au piment d'Espelette et à la truffe noire</p>
+                </div>
+                <div class="btn-price">
+                    <span>23</span>
+                    <span>€</span>
+                </div>
+            </button>
+
+        </section>
+
+        <section class="commander">
+
+            <input class="btn" type="button" value="Commander">
+
+        </section>
+
 
     </main>
 
-    <footer>
+    <footer class="footermenu">
+        <h3 class="footermenu__title">Ohmyfood</h3>
+        <ul class="footermenu__link">
+            <li class="footermenu__link__li">
+                <img src="../assets/Images-et-textes-Ohmyfood/images/logo/forkandknife.svg" alt="">
+                <a class="footermenu__link footermenu__link--white" href="#">Proposer un restaurant</a>
+            </li>
+            <li class="footermenu__link__li">
+                <img src="../assets/Images-et-textes-Ohmyfood/images/logo/checkhands.svg" alt="">
+                <a class="footermenu__link footermenu__link--white" href="#">Devenir partenaire</a>
+            </li>
+            <li><a class="footermenu__link footermenu__link--white" href="#">Mentions légales</a></li>
+            <li><a class="footermenu__link footermenu__link--white" href="mailto:ohmyfood@gmail.com">Contact</a></li>
+        </ul>
+
 
     </footer>
 
