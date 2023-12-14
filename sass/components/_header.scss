@@ -1,23 +1,34 @@
 .headbloc {
-    @include flex(column);
-    align-items:center;
+  @include flex(column);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  &__logo {
+    padding: 14px;
+    @include flex;
     justify-content: center;
-    &__logo {
-        margin: 10px
+    align-items: center;
+    width: 100%;
+    &--goback {
+      position: absolute;
+      left: 5px;
     }
-    &__searchbar {
-        @include flex;
-        width:100%;
-        justify-content: center;
-        align-items: center;
-        gap: 17px;
-        height: 50px;
-        background-color: $grey-color;
+  }
+  &__searchbar {
+    @include flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    height: 50px;
+    background-color: $grey-color;
     &--location {
-        border: none;
-        background-color: $grey-color;
+      border: none;
+      background-color: $grey-color;
     }
-    }
-    
+  }
+  &__img {
+    width: 100%;
+  }
 }
-
