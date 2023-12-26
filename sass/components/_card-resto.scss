@@ -8,6 +8,21 @@
     margin-bottom: 15px;
     &--content {
       padding: 15px;
+      @include flex;
+      &--txt {
+        flex: 1;
+        &--title {
+          margin: 0;
+        }
+        &--subtitle {
+          margin: 0;
+        }
+      }
+      &--img {
+        @include flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     &--img {
       height: 231px;
