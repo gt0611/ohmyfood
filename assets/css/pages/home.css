@@ -1,3 +1,24 @@
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.fa-heart {
+  position: absolute;
+}
+
+.heart-full {
+  opacity: 0;
+  transition: all 250ms;
+}
+.heart-full:hover {
+  opacity: 1;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .restaurants__card {
   display: flex;
   flex-direction: column;
@@ -7,6 +28,23 @@
 }
 .restaurants__card--content {
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.restaurants__card--content--txt {
+  flex: 1;
+}
+.restaurants__card--content--txt--title {
+  margin: 0;
+}
+.restaurants__card--content--txt--subtitle {
+  margin: 0;
+}
+.restaurants__card--content--img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .restaurants__card--img {
   height: 231px;
@@ -15,6 +53,7 @@
 }
 
 .fonctionnement__list--btn {
+  position: relative;
   border-radius: 20px;
   height: 72.379px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -25,6 +64,20 @@
   gap: 20px;
   padding: 28px 34px;
   align-items: center;
+}
+.fonctionnement__list--btn--num {
+  position: absolute;
+  background-color: #9356DC;
+  top: 30px;
+  left: -15px;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 15px;
+}
+.fonctionnement__list--btn--store {
+  color: #9356DC;
 }
 
 .footermenu {
@@ -75,7 +128,8 @@
 }
 .headbloc__logo--goback {
   position: absolute;
-  left: 5px;
+  left: 17px;
+  top: 25px;
 }
 .headbloc__searchbar {
   display: flex;
@@ -102,8 +156,16 @@
   height: 50px;
   color: #FFFFFF;
   border: none;
-  width: 180.495px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 19px;
+  padding-right: 19px;
   font-weight: 500;
+  transition: all 300ms;
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
+  opacity: 0.7;
 }
 
 body {
@@ -139,6 +201,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.new {
+  position: relative;
+}
+.new::before {
+  content: "nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  right: 12px;
+  top: 13px;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .restaurants {
