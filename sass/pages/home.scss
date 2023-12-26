@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/global";
 @import "../utils/mixins";
 @import "../components/card-resto";
 @import "../components/fonctionnement-btn";
@@ -34,6 +35,23 @@ body {
   &__list {
     @include flex(column);
     gap: 25px;
+  }
+}
+.new {
+  position: relative;
+  &::before {
+    content: "nouveau";
+    position: absolute;
+    background-color: $green-color;
+    color: $green-secondary-color;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    right: 12px;
+    top: 13px;
+    padding: 5px;
+    border-radius: 2px;
   }
 }
 
