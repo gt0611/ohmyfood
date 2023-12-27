@@ -13,6 +13,41 @@ body {
   max-width: 1440px;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  z-index: 999;
+  @include flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader 3000ms forwards 500ms 3;
+
+  p {
+    position: relative;
+    font-size: 30px;
+    color: $green-secondary-color;
+    &::before {
+      color: $purple-color;
+      animation: loader 3000ms both 300ms 2;
+    }
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: translateX(-99px);
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: translateX(0);
+    transform: scaleX(2);
+    opacity: 0;
+  }
+}
+
 .heroheader {
   @include flex(column);
   padding: 30px 18px;
