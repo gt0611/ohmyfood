@@ -5,7 +5,7 @@ a {
 
 .footermenu {
   background-color: #353535;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 25px;
   gap: 16px;
   display: flex;
@@ -30,7 +30,7 @@ a {
 }
 .footermenu__link--white {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headbloc {
@@ -75,9 +75,9 @@ a {
 .btn {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   height: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -93,15 +93,17 @@ a {
 
 .fa-heart {
   position: absolute;
+  font-size: 22px;
 }
 
 .heart-full {
   opacity: 0;
-  transition: all 250ms;
+  font-size: 22px;
+  transition: all 650ms;
 }
 .heart-full:hover {
   opacity: 1;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -109,55 +111,107 @@ a {
 
 .card__title {
   padding-bottom: 5px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
   text-transform: uppercase;
 }
 
 .btn-plate {
   display: flex;
+  flex-direction: row;
   flex: 1 0 0;
   align-items: end;
   border-radius: 15px;
   padding: 15px;
   height: 69px;
   border: none;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  animation-name: menu;
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
 }
-.btn-plate--content {
-  gap: 5px;
+.btn-plate--1 {
+  animation-delay: 222.2222222222ms;
+}
+.btn-plate--2 {
+  animation-delay: 444.4444444444ms;
+}
+.btn-plate--3 {
+  animation-delay: 666.6666666667ms;
+}
+.btn-plate--4 {
+  animation-delay: 888.8888888889ms;
+}
+.btn-plate--5 {
+  animation-delay: 1111.1111111111ms;
+}
+.btn-plate--6 {
+  animation-delay: 1333.3333333333ms;
+}
+.btn-plate--7 {
+  animation-delay: 1555.5555555556ms;
+}
+.btn-plate--8 {
+  animation-delay: 1777.7777777778ms;
+}
+.btn-plate--9 {
+  animation-delay: 2000ms;
+}
+.btn-plate__content {
   display: flex;
+  flex-direction: row;
+  gap: 5px;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   align-self: stretch;
-  width: calc(100% - 50px);
+  width: calc(100% - 15px);
 }
-.btn-plate--content--title {
+.btn-plate__content--title {
   margin: 0;
   font-weight: bold;
-  font-size: 1.125rem;
   text-align: start;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.btn-plate--content--subtitle {
+.btn-plate__content--subtitle {
   margin: 0;
   text-align: start;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-.btn-price {
+.btn-plate__price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   font-weight: bold;
   display: flex;
-  align-items: start;
-  width: 50px;
+}
+.btn-plate__choice {
+  display: flex;
+  flex-direction: row;
+  background-color: #99e2d0;
+  height: 69px;
+  border-radius: 0 15px 15px 0;
+  width: 59px;
+  margin-right: -59px;
+  align-items: center;
+  justify-content: center;
 }
 
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
@@ -166,7 +220,7 @@ body {
 
 .container {
   gap: 40px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   border-radius: 35px 35px 0 0;
   display: flex;
   flex-direction: column;

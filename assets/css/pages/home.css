@@ -5,15 +5,17 @@ a {
 
 .fa-heart {
   position: absolute;
+  font-size: 22px;
 }
 
 .heart-full {
   opacity: 0;
-  transition: all 250ms;
+  font-size: 22px;
+  transition: all 650ms;
 }
 .heart-full:hover {
   opacity: 1;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -23,7 +25,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-bottom: 15px;
 }
 .restaurants__card--content {
@@ -67,22 +69,25 @@ a {
 }
 .fonctionnement__list--btn--num {
   position: absolute;
-  background-color: #9356DC;
+  background-color: #9356dc;
   top: 30px;
   left: -15px;
   height: 24px;
   width: 24px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fonctionnement__list--btn--store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .footermenu {
   background-color: #353535;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 25px;
   gap: 16px;
   display: flex;
@@ -107,7 +112,7 @@ a {
 }
 .footermenu__link--white {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headbloc {
@@ -152,9 +157,9 @@ a {
 .btn {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   height: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -174,11 +179,44 @@ body {
   max-width: 1440px;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: loader 3000ms forwards 500ms 3;
+}
+.loader p {
+  position: relative;
+  font-size: 30px;
+  color: #008766;
+}
+.loader p::before {
+  color: #9356dc;
+  animation: loader 3000ms both 300ms 2;
+}
+
+@keyframes loader {
+  from {
+    transform: translateX(-99px);
+    transform: scaleX(1);
+  }
+  to {
+    transform: translateX(0);
+    transform: scaleX(2);
+    opacity: 0;
+  }
+}
 .heroheader {
   display: flex;
   flex-direction: column;
   padding: 30px 18px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -209,7 +247,7 @@ body {
 .new::before {
   content: "nouveau";
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
   width: -moz-fit-content;
   width: fit-content;
@@ -222,7 +260,7 @@ body {
 }
 
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   gap: 18px;
