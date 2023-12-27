@@ -11,14 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/pages/restaurants.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>La palette du goût</title>
 </head>
 
 <body>
     <header class="headbloc">
         <div class="headbloc__logo">
-            <img class="headbloc__logo--goback" src="../assets/Images-et-textes-Ohmyfood/images/logo/GoBack.svg"
-                alt="image d'une flèche">
+            <a href="/index.html">
+                <i class="fa-solid fa-arrow-left headbloc__logo--goback"></i>
+            </a>
             <img class="headbloc__logo--site" src="../assets/Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg"
                 alt="logo ohmyfood">
         </div>
@@ -28,123 +32,116 @@
     </header>
 
     <main class="container">
-        <h1 class="main-title">La palette du goût</h1>
+        <div class="title-bloc">
+            <h1 class="title-bloc__name">La palette du goût</h1>
+            <div class="title-bloc__img">
+                <i class="fa-regular fa-heart heart-empty"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+            </div>
+
+        </div>
 
         <section class="card">
-            <p class="card__title">Entrées</p>
+            <h3 class="card__title">Entrées</h3>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Fricassée d'escargots</p>
-                    <p class="btn-plate--content--subtitle">Au piment d'Espelette </p>
+            <button class="btn-plate btn-plate--1">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Fricassée d'escargots</h4>
+                    <p class="btn-plate__content--subtitle">Au piment d'Espelette </p>
                 </div>
-                <div class="btn-price">
-                    <span>25</span>
-                    <span>€</span>
+                <span class="btn-plate__price">25€</span>
+                <span class="btn-plate__choice"></span>
+            </button>
+
+            <button class="btn-plate btn-plate--2">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Foie gras de canard mi-cuit</h4>
+                    <p class="btn-plate__content--subtitle">Et ses copeaux de truffe noire</p>
+                </div>
+                <span class="btn-plate__price">35€</span>
+            </button>
+
+            <button class="btn-plate btn-plate--3">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Œuf au plat</h4>
+                    <p class="btn-plate__content--subtitle">Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <span class="btn-plate__price">25€</span>
+            </button>
+
+        </section>
+
+        <section class="card ">
+            <h3 class="card__title">Plats</h3>
+
+            <button class="btn-plate btn-plate--4">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Filet de bœuf aux herbes</h4>
+                    <p class="btn-plate__content--subtitle">Accompagné de sa ribambelle de légumes</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>40€</span>
                 </div>
             </button>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Foie gras de canard mi-cuit</p>
-                    <p class="btn-plate--content--subtitle">Et ses copeaux de truffe noire</p>
+            <button class="btn-plate btn-plate--5">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Parmentier de queue de bœuf</h4>
+                    <p class="btn-plate__content--subtitle">À la truffe noire sur sa purée de panais</p>
                 </div>
-                <div class="btn-price">
-                    <span>35</span>
-                    <span>€</span>
+                <div class="btn-plate__price">
+                    <span>35€</span>
                 </div>
             </button>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Œuf au plat</p>
-                    <p class="btn-plate--content--subtitle">Assaisonné à la truffe sur lit de caviar</p>
+            <button class="btn-plate btn-plate--6">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Filet de turbot</h4>
+                    <p class="btn-plate__content--subtitle">Aux agrumes</p>
                 </div>
-                <div class="btn-price">
-                    <span>25</span>
-                    <span>€</span>
+                <div class="btn-plate__price">
+                    <span>44€</span>
                 </div>
             </button>
 
         </section>
 
-        <section class="card">
-            <p class="card__title">Plats</p>
+        <section class="card ">
+            <h3 class="card__title">Desserts</h3>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Filet de bœuf aux herbes</p>
-                    <p class="btn-plate--content--subtitle">Accompagné de sa ribambelle de légumes</p>
+            <button class="btn-plate btn-plate--7">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Paris-Brest</h4>
+                    <p class="btn-plate__content--subtitle">Revisité</p>
                 </div>
-                <div class="btn-price">
-                    <span>40</span>
-                    <span>€</span>
+                <div class="btn-plate__price">
+                    <span>18€</span>
                 </div>
             </button>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Parmentier de queue de bœuf</p>
-                    <p class="btn-plate--content--subtitle">À la truffe noire sur sa purée de panais</p>
+            <button class="btn-plate btn-plate--8">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Macaron au chocolat d'exception</h4>
+                    <p class="btn-plate__content--subtitle">Et glace à la vanille de Madagascar</p>
                 </div>
-                <div class="btn-price">
-                    <span>35</span>
-                    <span>€</span>
+                <div class="btn-plate__price">
+                    <span>22€</span>
                 </div>
             </button>
 
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Filet de turbot</p>
-                    <p class="btn-plate--content--subtitle">Aux agrumes</p>
+            <button class="btn-plate btn-plate--9">
+                <div class="btn-plate__content">
+                    <h4 class="btn-plate__content--title">Mousse au chocolat</h4>
+                    <p class="btn-plate__content--subtitle">Au piment d'Espelette et à la truffe noire</p>
                 </div>
-                <div class="btn-price">
-                    <span>44</span>
-                    <span>€</span>
+                <div class="btn-plate__price">
+                    <span>23€</span>
                 </div>
             </button>
 
         </section>
 
-        <section class="card">
-            <p class="card__title">Desserts</p>
-
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Paris-Brest</p>
-                    <p class="btn-plate--content--subtitle">Revisité</p>
-                </div>
-                <div class="btn-price">
-                    <span>18</span>
-                    <span>€</span>
-                </div>
-            </button>
-
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Macaron au chocolat d'exception</p>
-                    <p class="btn-plate--content--subtitle">Et glace à la vanille de Madagascar</p>
-                </div>
-                <div class="btn-price">
-                    <span>22</span>
-                    <span>€</span>
-                </div>
-            </button>
-
-            <button class="btn-plate">
-                <div class="btn-plate--content">
-                    <p class="btn-plate--content--title">Mousse au chocolat</p>
-                    <p class="btn-plate--content--subtitle">Au piment d'Espelette et à la truffe noire</p>
-                </div>
-                <div class="btn-price">
-                    <span>23</span>
-                    <span>€</span>
-                </div>
-            </button>
-
-        </section>
-
-        <section class="commander">
+        <section class="command">
 
             <input class="btn" type="button" value="Commander">
 
