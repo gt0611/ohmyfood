@@ -1,5 +1,7 @@
 .fonctionnement {
   &__list {
+    @include flex(column);
+    gap: 25px;
     &--btn {
       position: relative;
       border-radius: 20px;
@@ -28,6 +30,12 @@
       &--store {
         color: $purple-color;
       }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__list {
+      flex-direction: row;
+      white-space: nowrap;
     }
   }
 }

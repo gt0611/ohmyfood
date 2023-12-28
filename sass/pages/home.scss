@@ -11,6 +11,7 @@ body {
   @include font;
   margin: 0 auto;
   max-width: 1440px;
+  box-sizing: border-box;
 }
 
 .loader {
@@ -45,6 +46,7 @@ body {
     transform: translateX(0);
     transform: scaleX(2);
     opacity: 0;
+    display: none;
   }
 }
 
@@ -62,16 +64,18 @@ body {
 
 .main-container {
   @include flex(column);
+  @media screen and (min-width: 1440px) {
+    gap: 30px;
+  }
 }
 
 .fonctionnement {
-  @include flex(column);
   padding: 30px 18px;
-  &__list {
-    @include flex(column);
-    gap: 25px;
+  @media screen and (min-width: 1440px) {
+    padding: 50px 180px;
   }
 }
+
 .new {
   position: relative;
   &::before {
@@ -92,8 +96,9 @@ body {
 
 .restaurants {
   background-color: $background;
-  @include flex(column);
   gap: 18px;
   padding: 30px 18px;
-  box-sizing: border-box;
+  @media screen and (min-width: 1440px) {
+    padding: 0 180px 0 180px;
+  }
 }

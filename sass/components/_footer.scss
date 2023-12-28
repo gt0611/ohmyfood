@@ -24,4 +24,11 @@
       color: $white-color;
     }
   }
+  @media screen and (min-width: 1440px) {
+    @include flex(row-reverse);
+    align-items: flex-start;
+    &__link {
+      @include flex;
+    }
+  }
 }
