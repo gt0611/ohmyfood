@@ -32,6 +32,17 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+@media screen and (min-width: 1440px) {
+  .footermenu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .footermenu__link {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .headbloc {
   display: flex;
@@ -186,20 +197,34 @@ a {
 .btn-plate__price {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-self: flex-end;
   font-weight: bold;
   display: flex;
+  margin-right: 10px;
 }
 .btn-plate__choice {
   display: flex;
   flex-direction: row;
   background-color: #99e2d0;
-  height: 69px;
   border-radius: 0 15px 15px 0;
+  height: 69px;
   width: 59px;
-  margin-right: -59px;
+  margin-right: -49px;
+  align-self: center;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.btn-plate__choice:hover {
+  margin: 0;
+  animation: check 700ms ease-in-out forwards;
+}
+.btn-plate__choice--icon {
+  color: #99e2d0;
+  background: #ffffff;
+  height: 24px;
+  border-radius: 15px;
+  width: 24px;
 }
 
 @keyframes menu {
@@ -210,6 +235,14 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes check {
+  from {
+    margin-right: -49px;
+  }
+  to {
+    margin-right: 0;
   }
 }
 body {
