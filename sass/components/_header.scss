@@ -32,4 +32,9 @@
   &__img {
     width: 100%;
   }
+  @media screen and (min-width: 1440px) {
+    &__img {
+      height: 383px;
+    }
+  }
 }

@@ -23,6 +23,10 @@ body {
   position: relative;
   z-index: 999;
   margin-top: -40px;
+  @media screen and (min-width: 1440px) {
+    margin: -40px 190px 0 190px;
+    padding: 0 190px;
+  }
 }
 
 .title-bloc {
@@ -37,6 +41,10 @@ body {
     @include flex;
     align-items: center;
   }
+  @media screen and (min-width: 1440px) {
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 .card {
@@ -47,4 +55,5 @@ body {
 .command {
   @include flex;
   justify-content: center;
+  margin-bottom: 40px;
 }

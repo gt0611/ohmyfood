@@ -9,6 +9,7 @@
     border-radius: 15px;
     background-color: $white-color;
     margin-bottom: 15px;
+    height: fit-content;
     &--content {
       padding: 15px;
       @include flex;
