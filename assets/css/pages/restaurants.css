@@ -82,6 +82,11 @@ a {
 .headbloc__img {
   width: 100%;
 }
+@media screen and (min-width: 1440px) {
+  .headbloc__img {
+    height: 383px;
+  }
+}
 
 .btn {
   border-radius: 25px;
@@ -262,6 +267,12 @@ body {
   z-index: 999;
   margin-top: -40px;
 }
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: -40px 190px 0 190px;
+    padding: 0 190px;
+  }
+}
 
 .title-bloc {
   display: flex;
@@ -279,6 +290,12 @@ body {
   flex-direction: row;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  .title-bloc {
+    justify-content: center;
+    gap: 24px;
+  }
+}
 
 .card {
   display: flex;
@@ -290,6 +307,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=restaurants.css.map */
