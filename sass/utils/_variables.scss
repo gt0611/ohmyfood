@@ -8,6 +8,6 @@ $white-color: #ffffff;
 $grey-color: #eaeaea;
 $pink-color: #ff79da;
 $background: #f6f6f6;
-$number-menu: 9;
+$number-menu: 10;
 $anim-dur: 2000ms;
-$anim-delay: $anim-dur / $number-menu;
+$anim-delay: calc($anim-dur / $number-menu);
