@@ -9,7 +9,6 @@
     @include flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     &--goback {
       position: absolute;
       left: 17px;
@@ -31,6 +30,8 @@
   }
   &__img {
     width: 100%;
+    object-fit: cover;
+    height: 275px;
   }
   @media screen and (min-width: 1440px) {
     &__img {
