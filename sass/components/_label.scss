@@ -3,6 +3,6 @@
     padding-bottom: 5px;
     border-bottom: 3px solid $green-color;
     width: 40px;
-    text-transform: uppercase;
+    @include title-plate;
   }
 }
