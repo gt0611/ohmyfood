@@ -23,15 +23,15 @@ body {
   @include flex;
   align-items: center;
   justify-content: center;
-  animation: loader 3000ms forwards 500ms 3;
+  animation: loader 3000ms forwards;
 
   p {
     position: relative;
+    text-transform: uppercase;
     font-size: 30px;
-    color: $green-secondary-color;
     &::before {
-      color: $purple-color;
-      animation: loader 3000ms both 300ms 2;
+      position: absolute;
+      animation: loader 3000ms;
     }
   }
 }
@@ -40,11 +40,13 @@ body {
   from {
     transform: translateX(-99px);
     transform: scaleX(1);
+    color: $pink-color;
   }
 
   to {
     transform: translateX(0);
-    transform: scaleX(2);
+    transform: scaleX(4);
+    color: $purple-color;
     opacity: 0;
     display: none;
   }
@@ -99,6 +101,6 @@ body {
   gap: 18px;
   padding: 30px 18px;
   @media screen and (min-width: 1440px) {
-    padding: 0 180px 0 180px;
+    padding: 0 180px 30px 180px;
   }
 }
