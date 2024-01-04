@@ -1,14 +1,33 @@
-@mixin flex($direction:row){
-    display: flex;
-    flex-direction: $direction;
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
 }
 
-@mixin title($white-color){
-    font-family: 'Shrikhand';
-    font-size: 1.75rem;
+@mixin title($white-color) {
+  font-family: "Shrikhand";
+  font-size: 1.75rem;
 }
 
 @mixin font {
-    font-family:'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin h3 {
+  font-size: 1.125rem;
+}
+
+@mixin p {
+  font-size: 0.938rem;
+}
+
+@mixin title-plate {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
