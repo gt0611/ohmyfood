@@ -10,19 +10,192 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/pages/restaurants.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Le délice des sens</title>
 </head>
 
 <body>
-    <header>
+    <header class="headbloc">
+        <div class="headbloc__logo">
+            <a href="/index.html">
+                <i class="fa-solid fa-arrow-left headbloc__logo--goback"></i>
+            </a>
+            <img class="headbloc__logo--site" src="../assets/Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg"
+                alt="logo ohmyfood">
+        </div>
+        <img class="headbloc__img"
+            src="../assets/Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="Le délice des sens">
 
     </header>
 
-    <main>
+    <main class="container">
+        <div class="title-bloc">
+            <h1 class="title-bloc__name">Le délice des sens</h1>
+            <div class="title-bloc__img">
+                <i class="fa-regular fa-heart heart-empty"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+            </div>
+
+        </div>
+
+        <section class="card">
+            <h2 class="card__title">Entrées</h2>
+
+            <article class="btn-plate btn-plate--1">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Tartare de thon</h3>
+                    <p class="btn-plate__content--subtitle">Assaisonné au yuzu</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>25€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--2">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Bouchée de homard croustillant</h3>
+                    <p class="btn-plate__content--subtitle">Et sa farandole de petits légumes</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>35€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--3">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Velouté de cèpes</h3>
+                    <p class="btn-plate__content--subtitle">Aux truffes</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>20€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="card ">
+            <h2 class="card__title">Plats</h2>
+
+            <article class="btn-plate btn-plate--4">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Poulet rôti aux herbes de Provence</h3>
+                    <p class="btn-plate__content--subtitle">Et sa crème de truffe</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>40€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--5">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Langouste rôtie</h3>
+                    <p class="btn-plate__content--subtitle">Et ses légumes de saison</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>35€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--6">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Côte de bœuf Angus</h3>
+                    <p class="btn-plate__content--subtitle">Et sa purée de panais</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>44€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="card ">
+            <h2 class="card__title">Desserts</h2>
+
+            <article class="btn-plate btn-plate--7">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Farandole de desserts</h3>
+                    <p class="btn-plate__content--subtitle">Du chef</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>18€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--8">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Crème brulée</h3>
+                    <p class="btn-plate__content--subtitle">Revisité</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>22€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+            <article class="btn-plate btn-plate--9">
+                <div class="btn-plate__content">
+                    <h3 class="btn-plate__content--title">Tiramisu</h3>
+                    <p class="btn-plate__content--subtitle">À la noisette</p>
+                </div>
+                <div class="btn-plate__price">
+                    <span>23€</span>
+                </div>
+                <div class="btn-plate__choice">
+                    <i class="fas fa-circle-check btn-plate__choice--icon"></i>
+                </div>
+            </article>
+
+        </section>
+
+        <div class="command">
+            <input class="btn" type="button" value="Commander">
+        </div>
+
 
     </main>
 
-    <footer>
+    <footer class="footermenu">
+        <h3 class="footermenu__title">Ohmyfood</h3>
+        <ul class="footermenu__link">
+            <li class="footermenu__link__li">
+                <img src="../assets/Images-et-textes-Ohmyfood/images/logo/forkandknife.svg" alt="">
+                <a class="footermenu__link footermenu__link--white" href="#">Proposer un restaurant</a>
+            </li>
+            <li class="footermenu__link__li">
+                <img src="../assets/Images-et-textes-Ohmyfood/images/logo/checkhands.svg" alt="">
+                <a class="footermenu__link footermenu__link--white" href="#">Devenir partenaire</a>
+            </li>
+            <li><a class="footermenu__link footermenu__link--white" href="#">Mentions légales</a></li>
+            <li><a class="footermenu__link footermenu__link--white" href="mailto:ohmyfood@gmail.com">Contact</a></li>
+        </ul>
+
 
     </footer>
 
