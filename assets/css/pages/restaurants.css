@@ -32,7 +32,7 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .footermenu {
     display: flex;
     flex-direction: row-reverse;
@@ -58,7 +58,6 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .headbloc__logo--goback {
   position: absolute;
@@ -81,6 +80,8 @@ a {
 }
 .headbloc__img {
   width: 100%;
+  object-fit: cover;
+  height: 275px;
 }
 @media screen and (min-width: 1440px) {
   .headbloc__img {
@@ -110,12 +111,13 @@ a {
 .fa-heart {
   position: absolute;
   font-size: 22px;
+  margin-right: 25px;
 }
 
 .heart-full {
   opacity: 0;
   font-size: 22px;
-  transition: all 650ms;
+  transition: all 880ms;
 }
 .heart-full:hover {
   opacity: 1;
@@ -129,75 +131,92 @@ a {
   padding-bottom: 5px;
   border-bottom: 3px solid #99e2d0;
   width: 40px;
+  font-size: 1.125rem;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .btn-plate {
   display: flex;
   flex-direction: row;
-  flex: 1 0 0;
-  align-items: end;
+  flex: 1;
   border-radius: 15px;
-  padding: 15px;
+  padding-left: 15px;
   height: 69px;
-  border: none;
-  background: #ffffff;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  animation-name: menu;
-  animation-duration: 2000ms;
-  animation-fill-mode: both;
+}
+.btn-plate:hover__content {
+  width: calc(100% - 30px - 69px);
+}
+.btn-plate:hover__content--title {
+  width: calc(100% - 30px - 69px);
+}
+.btn-plate:hover__content--subtitle {
+  width: calc(100% - 30px - 69px);
+}
+.btn-plate:hover .btn-plate__choice {
+  width: 69px;
+}
+.btn-plate:hover .btn-plate__choice--icon {
+  opacity: 1;
 }
 .btn-plate--1 {
-  animation-delay: 222.2222222222ms;
+  animation-delay: 200ms;
 }
 .btn-plate--2 {
-  animation-delay: 444.4444444444ms;
+  animation-delay: 400ms;
 }
 .btn-plate--3 {
-  animation-delay: 666.6666666667ms;
+  animation-delay: 600ms;
 }
 .btn-plate--4 {
-  animation-delay: 888.8888888889ms;
+  animation-delay: 800ms;
 }
 .btn-plate--5 {
-  animation-delay: 1111.1111111111ms;
+  animation-delay: 1000ms;
 }
 .btn-plate--6 {
-  animation-delay: 1333.3333333333ms;
+  animation-delay: 1200ms;
 }
 .btn-plate--7 {
-  animation-delay: 1555.5555555556ms;
+  animation-delay: 1400ms;
 }
 .btn-plate--8 {
-  animation-delay: 1777.7777777778ms;
+  animation-delay: 1600ms;
 }
 .btn-plate--9 {
+  animation-delay: 1800ms;
+}
+.btn-plate--10 {
   animation-delay: 2000ms;
 }
 .btn-plate__content {
   display: flex;
-  flex-direction: row;
-  gap: 5px;
   flex-direction: column;
+  gap: 5px;
   align-items: start;
   justify-content: center;
   align-self: stretch;
-  width: calc(100% - 15px);
+  width: calc(100% - 30px);
 }
 .btn-plate__content--title {
   margin: 0;
   font-weight: bold;
   text-align: start;
+  font-size: 1.125rem;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 30px);
 }
 .btn-plate__content--subtitle {
   margin: 0;
   text-align: start;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.938rem;
+  width: calc(100% - 30px);
 }
 .btn-plate__price {
   display: flex;
@@ -206,6 +225,8 @@ a {
   font-weight: bold;
   display: flex;
   margin-right: 10px;
+  width: 30px;
+  padding-bottom: 15px;
 }
 .btn-plate__choice {
   display: flex;
@@ -213,23 +234,15 @@ a {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   height: 69px;
-  width: 59px;
-  margin-right: -49px;
-  align-self: center;
+  width: 0;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-.btn-plate__choice:hover {
-  margin: 0;
-  animation: check 700ms ease-in-out forwards;
+  transition: width 0.5s;
 }
 .btn-plate__choice--icon {
-  color: #99e2d0;
-  background: #ffffff;
-  height: 24px;
-  border-radius: 15px;
-  width: 24px;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.8s;
 }
 
 @keyframes menu {
@@ -240,14 +253,6 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes check {
-  from {
-    margin-right: -49px;
-  }
-  to {
-    margin-right: 0;
   }
 }
 body {
@@ -277,8 +282,7 @@ body {
 .title-bloc {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
 }
 .title-bloc__name {
   font-family: "Shrikhand";
@@ -290,7 +294,7 @@ body {
   flex-direction: row;
   align-items: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .title-bloc {
     justify-content: center;
     gap: 24px;
