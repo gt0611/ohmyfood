@@ -31,8 +31,7 @@ body {
 
 .title-bloc {
   @include flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   &__name {
     @include title($dark-color);
     margin: 0;
@@ -41,7 +40,7 @@ body {
     @include flex;
     align-items: center;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
     gap: 24px;
   }
