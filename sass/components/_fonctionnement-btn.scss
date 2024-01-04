@@ -1,23 +1,24 @@
 .fonctionnement {
   &__list {
     @include flex(column);
-    gap: 25px;
+    gap: 37px;
     &--btn {
       position: relative;
       border-radius: 20px;
-      height: 72.379px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       border: none;
       text-align: start;
       @include flex;
-      gap: 20px;
-      padding: 28px 34px;
+      gap: 27px;
+      padding: 25px 22px;
       align-items: center;
+      justify-content: center;
+      flex: 1;
       &--num {
         position: absolute;
         background-color: $purple-color;
-        top: 30px;
-        left: -15px;
+        top: 25px;
+        left: -10px;
         height: 24px;
         width: 24px;
         text-align: center;
@@ -32,7 +33,7 @@
       }
     }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     &__list {
       flex-direction: row;
       white-space: nowrap;
