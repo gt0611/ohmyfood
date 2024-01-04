@@ -1,12 +1,13 @@
 .fa-heart {
   position: absolute;
   font-size: 22px;
+  margin-right: 25px;
 }
 
 .heart-full {
   opacity: 0;
   font-size: 22px;
-  transition: all 650ms;
+  transition: all 880ms;
   &:hover {
     opacity: 1;
     background-image: linear-gradient(
