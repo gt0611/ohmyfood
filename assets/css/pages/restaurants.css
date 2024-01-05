@@ -108,6 +108,11 @@ a {
   opacity: 0.7;
 }
 
+.btn-restaurant {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
 .fa-heart {
   position: absolute;
   font-size: 22px;
@@ -144,6 +149,9 @@ a {
   padding-left: 15px;
   height: 69px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  animation-name: menu;
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
 }
 .btn-plate:hover__content {
   width: calc(100% - 30px - 69px);
@@ -217,6 +225,7 @@ a {
   text-overflow: ellipsis;
   font-size: 0.938rem;
   width: calc(100% - 30px);
+  color: #353535;
 }
 .btn-plate__price {
   display: flex;
@@ -282,17 +291,19 @@ body {
 .title-bloc {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .title-bloc__name {
   font-family: "Shrikhand";
   font-size: 1.75rem;
   margin: 0;
+  white-space: nowrap;
 }
 .title-bloc__img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .title-bloc {
