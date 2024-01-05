@@ -5,6 +5,9 @@
   padding-left: 15px;
   height: 69px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  animation-name: menu;
+  animation-duration: $anim-dur;
+  animation-fill-mode: both;
   &:hover {
     &__content {
       width: calc(100% - 30px - 69px);
@@ -48,6 +51,7 @@
       @include ellipsis;
       @include p;
       width: calc(100% - 30px);
+      color: $dark-color;
     }
   }
   &__price {
