@@ -153,13 +153,7 @@ a {
   animation-duration: 2000ms;
   animation-fill-mode: both;
 }
-.btn-plate:hover__content {
-  width: calc(100% - 30px - 69px);
-}
-.btn-plate:hover__content--title {
-  width: calc(100% - 30px - 69px);
-}
-.btn-plate:hover__content--subtitle {
+.btn-plate:hover .btn-plate__content {
   width: calc(100% - 30px - 69px);
 }
 .btn-plate:hover .btn-plate__choice {
@@ -202,10 +196,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  align-items: start;
   justify-content: center;
-  align-self: stretch;
-  width: calc(100% - 30px);
+  transition: width 0.5s;
+  width: calc(100% - 40px);
 }
 .btn-plate__content--title {
   margin: 0;
@@ -295,7 +288,7 @@ body {
 }
 .title-bloc__name {
   font-family: "Shrikhand";
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   margin: 0;
   white-space: nowrap;
 }
