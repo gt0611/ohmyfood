@@ -22,6 +22,18 @@ a {
   color: transparent;
 }
 
+.heart-solid {
+  opacity: 1;
+  transition: all 880ms;
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.heart-solid:hover {
+  opacity: 0;
+}
+
 .restaurants__items {
   display: flex;
   flex-direction: column;
